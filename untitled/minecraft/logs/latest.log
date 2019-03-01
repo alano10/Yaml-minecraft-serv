@@ -1,0 +1,46 @@
+[17:11:42] [Server thread/INFO]: Loading properties
+[17:11:42] [Server thread/INFO]: Default game type: SURVIVAL
+[17:11:42] [Server thread/INFO]: Generating keypair
+[17:11:42] [Server thread/INFO]: Starting Minecraft server on *:25565
+[17:11:42] [Server thread/INFO]: Using epoll channel type
+[17:11:42] [Server thread/INFO]: This server is running CraftBukkit version git-Bukkit-e60fc34 (MC: 1.12.2) (Implementing API version 1.12.2-R0.1-SNAPSHOT)
+[17:11:42] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[17:11:42] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[17:11:42] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[17:11:42] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[17:11:42] [Server thread/INFO]: Preparing level "world"
+[17:11:43] [Server thread/INFO]: Preparing start region for level 0 (Seed: -5054102437753546679)
+[17:11:44] [Server thread/INFO]: Preparing spawn area: 21%
+[17:11:45] [Server thread/INFO]: Preparing start region for level 1 (Seed: -5054102437753546679)
+[17:11:46] [Server thread/INFO]: Preparing spawn area: 92%
+[17:11:46] [Server thread/INFO]: Preparing start region for level 2 (Seed: -5054102437753546679)
+[17:11:46] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:11:46] [Server thread/INFO]: Done (3.737s)! For help, type "help" or "?"
+[17:13:53] [Server thread/INFO]: tech_nerd_2008[/85.146.14.80:50880] logged in with entity id 42 at ([world]13.75301660816643, 73.0, 177.55039369142034)
+[17:14:18] [Server thread/INFO]: tech_nerd_2008 issued server command: /kill tech_nerd_2008
+[17:14:19] [Server thread/INFO]: tech_nerd_2008 fell out of the world
+[17:14:19] [Server thread/INFO]: [tech_nerd_2008: Killed tech_nerd_2008]
+[17:14:45] [Server thread/INFO]: LittleGamer_NL[/5.132.99.110:50249] logged in with entity id 892 at ([world]13.5, 73.0, 174.5)
+[17:14:54] [Server thread/INFO]: tech_nerd_2008 issued server command: /tp tech_nerd_2008 LittleGamer_NL
+[17:14:54] [Server thread/INFO]: [tech_nerd_2008: Teleported tech_nerd_2008 to LittleGamer_NL]
+[17:15:17] [Server thread/INFO]: tech_nerd_2008 issued server command: /op LittleGamer_NL
+[17:15:17] [Server thread/INFO]: [tech_nerd_2008: Opped LittleGamer_NL]
+[17:17:08] [Server thread/INFO]: LittleGamer_NL issued server command: /gamemoe 2
+[17:17:35] [Server thread/INFO]: LittleGamer_NL issued server command: /gamemoed 1
+[17:17:50] [Server thread/INFO]: tech_nerd_2008 issued server command: /gamemode 1 LittleGamer_NL
+[17:17:50] [Server thread/INFO]: [tech_nerd_2008: Set LittleGamer_NL's game mode to Creative Mode]
+[17:18:55] [Server thread/INFO]: LittleGamer_NL has reached the goal [Sky's the Limit]
+[17:19:45] [Server thread/INFO]: tech_nerd_2008 issued server command: /give LittleGamer_NL minecraft:fireworks
+[17:19:45] [Server thread/INFO]: [tech_nerd_2008: Given [Firework Rocket] * 1 to LittleGamer_NL]
+[17:19:52] [Server thread/INFO]: tech_nerd_2008 issued server command: /give LittleGamer_NL minecraft:fireworks 64
+[17:19:52] [Server thread/INFO]: [tech_nerd_2008: Given [Firework Rocket] * 64 to LittleGamer_NL]
+[17:20:24] [Server thread/INFO]: tech_nerd_2008 issued server command: /tp tech_nerd_2008 LittleGamer_NL
+[17:20:24] [Server thread/INFO]: [tech_nerd_2008: Teleported tech_nerd_2008 to LittleGamer_NL]
+[17:21:59] [Server thread/INFO]: LittleGamer_NL has made the advancement [Stone Age]
+[17:22:13] [Server thread/INFO]: tech_nerd_2008 issued server command: /give LittleGamer_NL minecraft:fire 64
+[17:22:13] [Server thread/INFO]: [tech_nerd_2008: There is no such item with name minecraft:fire]
+[17:23:34] [Server thread/INFO]: LittleGamer_NL lost connection: Disconnected
+[17:23:34] [Server thread/INFO]: LittleGamer_NL left the game
+[17:23:56] [Server thread/INFO]: tech_nerd_2008 lost connection: Disconnected
+[17:23:56] [Server thread/INFO]: tech_nerd_2008 left the game
+[17:31:46] [S

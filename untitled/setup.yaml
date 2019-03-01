@@ -1,0 +1,39 @@
+---
+- hosts: all
+  tasks:
+#  - name: add repository
+#    shell: add-apt-repository multiverse
+  - name: Install my packages
+    apt:
+      update_cache: yes
+      name: "{{ item }}"
+      state: present
+    with_items:
+    - curl
+    - wget
+    - nano
+    become: yes
+  - name: Make target dir
+    file:
+      path: ~/temp
+      state: directory
+    become: no
+  - name: Get makeself
+    get_url:
+      url: https://github.com/megastep/makeself/releases/download/release-2.4.0/makeself-2.4.0.run
+      dest: ~/temp
+      mode: 0755
+    become: no
+
+    - name: update
+    shell: apt-get update
+
+  - name: make minecraft dictory
+    shell: rmdir minecraft
+
+  - name: make minecraft dictory
+    shell: mkdir minecraft
+
+  - name: get into minecraft dictory
+    shell: cd minecraft
+#####3

@@ -1,0 +1,51 @@
+---
+
+- hosts: all
+  tasks:
+
+  - name: Ansible check dir exists.
+    stat:
+      path: ~/untitled/minecraft/
+    register: p
+
+
+  - name: Ansible check minecraft dir exists.
+    stat:
+      path: ~/untitled/minecraft
+    register: minecraft_dir
+
+
+  - name: Ansible check server exists.
+    stat:
+      path: ~/untitled/minecraft/minecraft_server.1.7.4.jar
+    register: minecraft_server
+
+
+  - name: making minecraft
+    shell: mkdir ~/untitled/minecraft
+    when: p.stat.exists == False
+
+  - name: going to minecraft
+    command: chdir=~/untitled/minecraft ls
+    when: p.stat.exists == true
+
+
+    tasks:
+  - get_url:
+      url: https://s3.amazonaws.com/Minecraft.Download/versions/1.7.4/minecraft_server.1.7.4.jar
+      dest: ~/untitled/minecraft
+    when: minecraft_server.stat.exists == False
+    become: no
+
+
+  - debug:
+     msg: the server was downloaded
+
+  - name: server on !!!!!
+    shell: nohup java -Xmx1024M -Xms1024M -jar ~/untitled/minecraft/minecraft_server.jar nogui  </dev/null >~/untitled/minecraft/>&1 &
+    when: p.stat.exists == true
+    become: yes
+
+
+  - debug:
+     msg: server log is in==> /dev/null 2

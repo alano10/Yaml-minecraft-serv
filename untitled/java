@@ -1,0 +1,1 @@
+just copy paste this into the terminal== -Xmx1024M -Xms1024M -jar minecraft_server.jar nogui
