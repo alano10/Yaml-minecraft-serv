@@ -1,0 +1,22 @@
+---
+- hosts: all
+  tasks:
+  - name: screen
+    shell: apt-get install screen
+
+  - name: wget
+    shell: wget -O minecraft_server.jar https://s3.amazonaws.com/Minecraft.Download/versions/1.7.4/minecraft_server.1.7.4.jar
+
+  - name: jdk
+    shell: apt-get install default-jdk
+
+  - name: update
+    shell: apt-get update
+
+  - name: make minecraft dictory
+    command: rmdir minecraft arg1 arg2 mkdir minecraft
+
+  - name: start server
+    shell: nohup java -Xmx1024M -Xms1024M -jar minecraft_server.jar nogui </dev/null >/dev/null 2>&1 &
+...
+

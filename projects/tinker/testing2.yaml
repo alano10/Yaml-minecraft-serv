@@ -1,0 +1,48 @@
+---
+
+- hosts: all
+  tasks:
+
+
+  - name: Ansible check dir exists.
+    stat:
+      path: ~/untitled/minecraft/
+    register: p
+
+  - name: update
+    shell: apt-get update
+
+  - name: making minecraft
+    shell: sudo rm -rf ~/untitled/minecraft
+    when: p.stat.exists == true
+
+  - name: Ansible check minecraft dir exists.
+    stat:
+      path: ~/untitled/minecraft
+    register: minecraft_dir
+
+  - name: check server exists.
+    stat:
+      path: ~/untitled/minecraft/
+    register: minecraft_server
+
+  - name: making minecraft
+    shell: mkdir ~/untitled/minecraft
+    when: p.stat.exists == False
+
+  - name: chanse dir
+    file:
+      path: ~/untitled/minecraft
+      state: directory
+    become: no
+  - name: Downloading jar file
+
+    get_url:
+      url: https://cdn.getbukkit.org/craftbukkit/craftbukkit-1.12.2.jar
+      dest: ~/untitled/minecraft
+    when: minecraft_server.stat.exists == false
+
+  - debug:
+     msg: the server was downloaded
+
+
